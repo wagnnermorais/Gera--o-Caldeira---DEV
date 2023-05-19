@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -8,84 +8,132 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
   list-style: none;
   text-decoration: none;
 }
 
 :root {
   --main-text-color: #F6F6F6;
+  --primary-bg-color: #000000;
+  --primary-blue: #22D4FD;
+  --main-header-font: 'Krona One', sans-serif;
+  --main-text-font: 'Montserrat', sans-serif;
 }
 
 body {
+  background: var(--primary-bg-color);
+}
+
+nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #000000;
+  gap: 2rem;
+}
+
+header a {
+  font-family: var(--main-text-font);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  transition: 200ms;
+}
+
+header a:hover {
+  color: #887fd3;
 }
 
 main {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
   gap: 5rem;
 }
 
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 h1 {
-  font-size: 2.7rem;
+  font-size: 2.25rem;
+  font-family: var(--main-header-font);
   color: var(--main-text-color);
   max-width: 550px;
+}
+
+h2 {
+  font-size: 1.12rem;
+  font-family: var(--main-header-font);
+  color: var(--main-text-color);
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-family: var(--main-text-font);
   color: var(--main-text-color);
   max-width: 550px;
-  margin: 1rem 0;
 }
 
 strong {
-  color: #22D4FD;
+  color: var(--primary-blue);
 }
 
 .button-box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
-a {
-  color: #0a2d6e;
-  padding: 1rem;
+.buttons {
+  display: flex;
   width: 100%;
-  border: none;
-  border-radius: 10px;
-  background: #87cae0;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 200ms;
-  text-align: center;
+  gap: 2.5rem;
 }
 
-a:hover {
-  background: #528799;
+.button-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .50rem;
+  padding: 1rem;
+  width: 100%;
+  border: 2px solid var(--primary-blue);
+  border-radius: 8px;
+  font-size: .90rem;
+  font-family: var(--main-text-font);
+  font-weight: 600;
+  text-align: center;
+  color: #f6f6f6;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.button-box a:hover {
+  background: #4837db;
+}
+
+.button-box a img {
+  width: 15px;
 }
 
 .img-box {
   position: relative;
   width: 450px;
   height: 450px;
-  border: 3px solid #22D4FD;
+  border: 3px solid var(--primary-blue);
   border-radius: 16px;
-  box-shadow: 2px 2px 2px rgb(20, 66, 126);
+  box-shadow: 2px 2px 2px #14427e;
 }
 
-img {
+.img-box img {
   position: absolute;
   width: 450px;
   top: 20px;
   right: 15px;
   border-radius: 16px;
-  box-shadow: 1px 1px 1px 2px rgb(20, 66, 126);
+  box-shadow: 1px 1px 1px 2px #14427e;
 }
 
 @media only screen and (max-width: 600px) {
@@ -102,12 +150,12 @@ img {
     margin: 2rem auto;
     width: 350px;
     height: 350px;
-    border: 3px solid #22D4FD;
+    border: 3px solid var(--primary-blue);
     border-radius: 16px;
-    box-shadow: 2px 2px 2px rgb(20, 66, 126);
+    box-shadow: 2px 2px 2px #14427e;
   }
 
-  img {
+  .img-box img {
     width: 350px;
   }
 }
@@ -141,10 +189,10 @@ img {
     height: 450px;
     border: 3px solid #22D4FD;
     border-radius: 16px;
-    box-shadow: 2px 2px 2px rgb(20, 66, 126);
+    box-shadow: 2px 2px 2px #14427e;
   }
 
-  img {
+  .img-box img {
     width: 450px;
   }
 }
@@ -163,7 +211,6 @@ img {
     font-size: 2.7rem;
     color: var(--main-text-color);
     max-width: 1024px;
-    text-align: center;
   }
   
   p {
@@ -180,10 +227,10 @@ img {
     height: 500px;
     border: 3px solid #22D4FD;
     border-radius: 16px;
-    box-shadow: 2px 2px 2px rgb(20, 66, 126);
+    box-shadow: 2px 2px 2px #14427e;
   }
 
-  img {
+  .img-box img {
     width: 500px;
   }
 }
@@ -210,12 +257,12 @@ img {
     margin: 0 auto;
     width: 500px;
     height: 500px;
-    border: 3px solid #22D4FD;
+    border: 3px solid var(--primary-blue);
     border-radius: 16px;
     box-shadow: 2px 2px 2px rgb(20, 66, 126);
   }
 
-  img {
+  .img-box img {
     width: 500px;
   }
 }
