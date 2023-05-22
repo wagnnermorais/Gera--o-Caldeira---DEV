@@ -24,6 +24,10 @@ body {
   background: var(--primary-bg-color);
 }
 
+header {
+  padding: 2% 0 0 19%;
+}
+
 nav {
   display: flex;
   gap: 2rem;
@@ -31,9 +35,10 @@ nav {
 
 header a {
   font-family: var(--main-text-font);
-  font-size: 1.1rem;
+  font-size: 1.10rem;
   font-weight: 600;
-  color: var(--primary-blue);
+  color: #22D4FD;
+  text-decoration: none;
   transition: 200ms;
 }
 
@@ -42,24 +47,23 @@ header a:hover {
 }
 
 main {
+  padding: 5% 15%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 5rem;
+  justify-content: space-around;
 }
 
 .text-section {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  width: 615px;
+  gap: 40px;
 }
 
 h1 {
   font-size: 2.25rem;
   font-family: var(--main-header-font);
   color: var(--main-text-color);
-  max-width: 550px;
 }
 
 h2 {
@@ -72,7 +76,7 @@ p {
   font-size: 1.5rem;
   font-family: var(--main-text-font);
   color: var(--main-text-color);
-  max-width: 550px;
+  text-align: justify;
 }
 
 strong {
@@ -88,7 +92,6 @@ strong {
 
 .buttons {
   display: flex;
-  width: 100%;
   gap: 2.5rem;
 }
 
@@ -98,7 +101,7 @@ strong {
   justify-content: center;
   gap: .50rem;
   padding: 1rem;
-  width: 100%;
+  width: 50%;
   border: 2px solid var(--primary-blue);
   border-radius: 8px;
   font-size: .90rem;
