@@ -4,4 +4,4 @@ Repositório criado para acompanhar as atividades do curso de Front-End do progr
 
 # Sobre o Programa
 
-https://institutocaldeira.org.br/programas/nova-geracao/
+<a href="https://institutocaldeira.org.br/programas/nova-geracao/" target="_blank">Nova Geração - Instituto Caldeira</a>
